@@ -1,6 +1,6 @@
 # Mhatiboglu
 
-Portfolio - Founders &amp; Coders
+Portfolio - VanillaJS
 
 ## Normalize.css
 
