@@ -49,7 +49,7 @@ footer {
 /* Navbar */
 .nav_ul {
   display: flex;
-  height: 50px;
+  height: 3em;
 }
 
 .nav_ul li {
