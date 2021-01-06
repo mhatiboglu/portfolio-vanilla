@@ -1,3 +1,7 @@
+:root {
+  --header-height: 100px;
+}
+
 html {
   background-color: rgb(182, 182, 182);
   height: 100%;
@@ -22,7 +26,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-
+  height: var(--header-height);
   background-color: rgba(135, 155, 222, 0.301);
 }
 
@@ -140,5 +144,71 @@ html {
 @media screen and (min-width: 1000px) {
   html {
     font-size: 22px;
+  }
+}
+
+/*hamburger menu */
+
+@media screen and (max-width: 800px) {
+  .line {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    margin: 3px;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    transition: ease-out 1s;
+    z-index: 2;
+  }
+  .navbar {
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.911);
+    height: 100vh;
+    width: 100%;
+    margin-left: -22px;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+  }
+  .navbar.open {
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+  }
+
+  .nav_ul {
+    flex-direction: column;
+  }
+  .nav_ul li {
+    margin: 5vh;
+  }
+  /* active and passive hamburger toggle*/
+  .rotateright {
+    transform: rotate(-45deg);
+    transition: ease 1s;
+  }
+
+  .rotateleft {
+    transform: rotate(45deg);
+    transition: ease 1s;
+    margin-top: -8px;
+  }
+  .passive {
+    display: none;
+    transition: ease 2s;
+  }
+}
+
+/*In safari browser header height equlas 0,
+therefore we gave header height as a margin-top*/
+
+@supports (-webkit-hyphens: none) {
+  .safari_only {
+    margin-top: var(--header-height);
   }
 }
