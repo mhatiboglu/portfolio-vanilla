@@ -3,8 +3,12 @@
 }
 
 html {
-  background-color: rgb(182, 182, 182);
-  height: 100%;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(156, 252, 248, 1) 11.2%,
+    rgba(110, 123, 251, 1) 91.1%
+  );
+  background-color: gray;
   scroll-behavior: smooth;
 }
 
@@ -16,8 +20,6 @@ body {
   justify-content: stretch;
   margin: auto;
   height: 100%;
-
-  background-color: rgba(222, 184, 135, 0.301);
 }
 
 header {
@@ -27,11 +29,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   height: var(--header-height);
-  background-color: rgba(135, 155, 222, 0.301);
-}
-
-main {
-  background-color: rgba(222, 135, 142, 0.301);
 }
 
 footer {
@@ -41,8 +38,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(0, 0, 0, 0.151);
 }
 
 .footer_a {
@@ -92,7 +87,6 @@ footer {
 
 /*Landing section*/
 .section_landing {
-  background-color: rgba(145, 222, 135, 0.301);
   height: calc(100vh - 100px);
   flex-direction: column;
 }
@@ -117,22 +111,89 @@ footer {
 
 /*Skills section*/
 
-.section_skills {
-  background-color: rgba(135, 209, 222, 0.301);
+.skills_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-/*Skills project*/
-
-.section_project {
-  background-color: rgba(135, 209, 222, 0.301);
+.skill_box {
+  height: 100px;
+  background-color: brown;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/*Skills section*/
-
-.section_contact {
-  background-color: rgba(135, 209, 222, 0.301);
+.skill_name {
+  margin: 0px;
 }
 
+.logo {
+  height: 45px;
+  width: 45px;
+  background-color: chartreuse;
+}
+
+/*Project project*/
+
+.projects_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_box {
+  background-color: rgba(255, 127, 80, 0.493);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.project_img {
+  background-color: rgba(128, 255, 0, 0.336);
+  height: 300px;
+  width: 300px;
+}
+
+/*Contact section*/
+
+.contacts_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_box {
+  height: 100px;
+  background-color: brown;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_name {
+  margin: 0px;
+}
+
+/*Responsive font-size*/
 html {
   font-size: 16px;
 }
