@@ -16,28 +16,36 @@ body {
   display: flex;
   flex-direction: column;
   margin: 30px;
-  max-width: 1400px;
   justify-content: stretch;
   margin: auto;
   height: 100%;
 }
 
 header {
-  padding-left: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   height: var(--header-height);
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+}
+.my_logo {
+  margin-left: 20px;
+}
+
+.main {
+  max-width: 1400px;
 }
 
 footer {
-  padding-left: 20px;
-  padding-left: 20px;
   height: 100px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: grey;
 }
 
 .footer_a {
@@ -49,6 +57,7 @@ footer {
 .nav_ul {
   display: flex;
   height: 3em;
+  margin-right: 20px;
 }
 
 .nav_ul li {
@@ -103,6 +112,23 @@ footer {
   text-align: center;
 }
 
+/*Social media accounts box */
+.social_items_box {
+  display: flex;
+  width: 100%;
+}
+.social_media_link {
+  margin: 10px;
+}
+
+.social_media_svg {
+  fill: black;
+}
+.social_media_svg:hover {
+  fill: blue;
+  transform: scale(1.4);
+  transition: ease-in 0.5s;
+}
 /*About section*/
 
 .section_about {
@@ -166,33 +192,51 @@ footer {
   width: 300px;
 }
 
+.project_link_box {
+  position: absolute;
+  margin-top: 150px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  z-index: -1;
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+.project_box:hover .project_link_box {
+  opacity: 1;
+  z-index: 1;
+}
+
 /*Contact section*/
 
-.contacts_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact_box {
-  height: 100px;
-  background-color: brown;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+.contact_subheader {
+  width: 80%;
+  margin: auto;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+.contact_button_box .button {
+  text-decoration: none;
+  color: rgb(8, 28, 94);
+  background-color: transparent;
+  border: 3px solid rgba(8, 28, 94, 1);
+  border-radius: 100px;
+  padding: 0.3em 1.2em;
+  margin: 40px;
 
-.contact_name {
-  margin: 0px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(8, 28, 94, 1) 50%
+  );
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.5s ease 0s, background-color 0.5s ease;
 }
-
+.contact_button_box .button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(8, 28, 94);
+  background-position: -100% 100%;
+}
 /*Responsive font-size*/
 html {
   font-size: 16px;
@@ -234,12 +278,12 @@ html {
     width: 100%;
     margin-left: -22px;
     clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 80% -20%);
     transition: all 1s ease-out;
   }
   .navbar.open {
     clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 80% -10%);
   }
 
   .nav_ul {
@@ -271,5 +315,8 @@ therefore we gave header height as a margin-top*/
 @supports (-webkit-hyphens: none) {
   .safari_only {
     margin-top: var(--header-height);
+  }
+  .safari_only2 {
+    margin-top: 80px;
   }
 }
