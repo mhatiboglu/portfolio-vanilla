@@ -214,7 +214,7 @@ footer {
   margin: auto;
   text-align: center;
 }
-.contact_button_box .button {
+.contact_button_box .contact_link {
   text-decoration: none;
   color: rgb(8, 28, 94);
   background-color: transparent;
@@ -222,7 +222,6 @@ footer {
   border-radius: 100px;
   padding: 0.3em 1.2em;
   margin: 40px;
-
   background-size: 200% 100%;
   background-image: linear-gradient(
     to right,
@@ -232,7 +231,7 @@ footer {
   transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
     color 0.5s ease 0s, background-color 0.5s ease;
 }
-.contact_button_box .button:hover {
+.contact_button_box .contact_link:hover {
   color: rgba(255, 255, 255, 1);
   background-color: rgb(8, 28, 94);
   background-position: -100% 100%;
@@ -319,4 +318,41 @@ therefore we gave header height as a margin-top*/
   .safari_only2 {
     margin-top: 80px;
   }
+}
+
+/*DARK THEME*/
+body.dark-theme {
+  color: rgb(233, 232, 232);
+  background: #222222;
+}
+h2.dark-theme {
+  color: rgb(233, 232, 232);
+}
+
+svg.dark-theme {
+  fill: rgb(233, 232, 232);
+}
+
+.contact_button_box .contact_link.dark-theme {
+  color: rgb(233, 232, 232);
+  border: 3px solid rgba(233, 232, 232, 1);
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(233, 232, 232, 0.377) 50%
+  );
+}
+
+.nav_ul li .textLink.dark-theme {
+    color:rgb(233, 232, 232);
+}
+
+.btn {
+  width: 50px;
+  height: 40px;
+  margin: 30px;
+  background: transparent;
+  border: none;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 100px;
 }
