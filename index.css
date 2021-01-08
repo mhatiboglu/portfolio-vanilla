@@ -147,25 +147,27 @@ footer {
 
 .skill_box {
   height: 100px;
-  background-color: brown;
+  background-color: rgba(228, 228, 228, 0.685);
   margin: 10px;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 100px;
+  box-shadow: 5px 10px rgba(51, 51, 51, 0.603);
 }
 
 .skill_name {
   margin: 0px;
+  color: black;
 }
 
 .logo {
   height: 45px;
   width: 45px;
-  background-color: chartreuse;
 }
 
 /*Project project*/
@@ -344,7 +346,7 @@ svg.dark-theme {
 }
 
 .nav_ul li .textLink.dark-theme {
-    color:rgb(233, 232, 232);
+  color: rgb(233, 232, 232);
 }
 
 .btn {
