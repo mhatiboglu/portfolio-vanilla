@@ -277,6 +277,33 @@ footer {
   background-color: rgb(8, 28, 94);
   background-position: -100% 100%;
 }
+
+/*Why section*/
+
+.why_subheader {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.why_subheader {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.why_section_links_box{
+    margin:20px 0px 80px 0px;
+}
+
+.why_link{
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin:10px;
+    text-decoration: none;
+}
+
 /*Responsive font-size*/
 html {
   font-size: 16px;
