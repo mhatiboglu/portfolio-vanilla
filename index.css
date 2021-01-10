@@ -102,12 +102,13 @@ footer {
 }
 .landing_name {
   color: darkblue;
-  animation: type_effect 6s steps(60, end);
+  animation: type_effect 6s steps(60, end) infinite;
   color: #000;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
   text-align: center;
+  font-weight: 60;
 }
 @keyframes type_effect {
   from {
@@ -116,6 +117,10 @@ footer {
   to {
     width: 100;
   }
+}
+
+.fullname {
+  font-weight: bold;
 }
 
 /*steps() is a timing function that allows us to break an animation or transition into segments, rather than one continuous transition from one state to another.
@@ -131,13 +136,12 @@ steps(<number_of_steps>, <direction>)
 @keyframes appear_effect {
   0% {
     opacity: 0.2;
-      transform: scale(1.3);
-
+    transform: scale(1.3);
+    transform: translateX(640px);
   }
   50% {
     opacity: 0.6;
     transform: scale(1.5);
-
   }
   100% {
     opacity: 1;
@@ -450,9 +454,12 @@ svg.dark-theme {
   color: rgb(233, 232, 232);
 }
 
-.skill_box {
-  box-shadow: rgba(255, 254, 254, 0.863);
-  box-shadow: inset 0 0 10px #000000;
+.nav_ul li .textLink.dark-theme {
+  color: rgb(233, 232, 232);
+}
+
+.why_link.dark-theme {
+  color: rgb(233, 232, 232);
 }
 
 .btn {

@@ -30,6 +30,7 @@ const landingHeader = document.querySelector(".landing_name");
 const socialMeadiaSvgs = document.querySelectorAll(".social_media_svg");
 const navTextLink = document.querySelectorAll(".textLink");
 const contact_link = document.querySelectorAll(".contact_link");
+const why_links = document.querySelectorAll(".why_link");
 const scroolTopBtn = document.querySelector(".top");
 
 // Handle multiple nodes
@@ -51,6 +52,7 @@ btn.addEventListener("click", function() {
   toggleMultipleQuerry(socialMeadiaSvgs);
   toggleMultipleQuerry(contact_link);
   toggleMultipleQuerry(navTextLink);
+  toggleMultipleQuerry(why_links);
 
   //   for (var item of socialMeadiaSvgs) {
   //     item.classList.toggle("dark-theme");
