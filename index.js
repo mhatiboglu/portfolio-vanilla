@@ -32,6 +32,7 @@ const navTextLink = document.querySelectorAll(".textLink");
 const contact_link = document.querySelectorAll(".contact_link");
 const why_links = document.querySelectorAll(".why_link");
 const scroolTopBtn = document.querySelector(".top");
+const theme_selector = document.querySelector(".selector");
 
 // Handle multiple nodes
 
@@ -53,15 +54,17 @@ btn.addEventListener("click", function() {
   toggleMultipleQuerry(contact_link);
   toggleMultipleQuerry(navTextLink);
   toggleMultipleQuerry(why_links);
+  theme_selector.classList.toggle("right");
+  theme_selector.classList.toggle("left");
 
   //   for (var item of socialMeadiaSvgs) {
   //     item.classList.toggle("dark-theme");
   //   }
 
-  btnImg.src =
-    btnImg.src == "https://i.ibb.co/7JfqXxB/sunny.png"
-      ? "https://i.ibb.co/FxzBYR9/night.png"
-      : "https://i.ibb.co/7JfqXxB/sunny.png";
+  // btnImg.src =
+  //   btnImg.src == "https://i.ibb.co/7JfqXxB/sunny.png"
+  //     ? "https://i.ibb.co/FxzBYR9/night.png"
+  //     : "https://i.ibb.co/7JfqXxB/sunny.png";
 });
 
 //scrool top

@@ -468,7 +468,7 @@ svg.dark-theme {
 }
 
 .btn {
-  width: 50px;
+  width: 80px;
   height: 40px;
   margin: 30px;
   background: transparent;
@@ -477,8 +477,36 @@ svg.dark-theme {
   border-radius: 100px;
   outline: none;
   box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn img {
+  margin: 0px 5px 0px 5px;
+}
+/*Switch button*/
+.selector {
+  width: 40px;
+  height: 40px;
+  position: absolute;
 }
 
+.right {
+  background-color: black;
+  margin-left: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+.left {
+  background-color: rgb(94, 165, 223);
+  margin-right: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  opacity: 0.9;
+  transition: all 1s ease;
+}
 /*Top button*/
 
 .top {
