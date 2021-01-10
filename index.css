@@ -501,6 +501,11 @@ svg.dark-theme {
   width: 40px;
   height: 40px;
   position: absolute;
+  /* For safari browser we need to align selector */
+  right: 0;
+  left: -1px;
+  bottom: 0;
+  top: -1px;
 }
 
 .right {
