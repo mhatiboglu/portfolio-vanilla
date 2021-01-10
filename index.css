@@ -33,7 +33,12 @@ header {
   width: 100%;
 }
 .my_logo {
-  margin-left: 20px;
+  margin: 0px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
 }
 
 .main {
