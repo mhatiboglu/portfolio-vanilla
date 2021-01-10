@@ -491,6 +491,7 @@ svg.dark-theme {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .btn img {
   margin: 0px 5px 0px 5px;
