@@ -499,7 +499,7 @@ svg.dark-theme {
 .selector {
   width: 40px;
   height: 40px;
-  position: fixed;
+  position: absolute;
 }
 
 .right {
