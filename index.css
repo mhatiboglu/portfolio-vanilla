@@ -26,7 +26,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: var(--header-height);
   max-width: 1400px;
   margin: auto;
@@ -344,9 +344,11 @@ steps(<number_of_steps>, <direction>)
 .why_link {
   border: 2px solid gray;
   border-radius: 30px;
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
   text-decoration: none;
+  text-align: center;
+
 }
 
 /*Responsive font-size*/
@@ -417,6 +419,9 @@ html {
   .passive {
     display: none;
     transition: ease 2s;
+  }
+  .social_items_box {
+    margin-bottom: 100px;
   }
 }
 
