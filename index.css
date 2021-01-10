@@ -492,7 +492,7 @@ svg.dark-theme {
 }
 
 .right {
-  background-color: black;
+  background-color: rgb(94, 165, 223);
   margin-left: 40px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -500,7 +500,7 @@ svg.dark-theme {
   transition: all 1s ease;
 }
 .left {
-  background-color: rgb(94, 165, 223);
+  background-color: black;
   margin-right: 40px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
