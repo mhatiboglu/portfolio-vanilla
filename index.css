@@ -102,10 +102,46 @@ footer {
 }
 .landing_name {
   color: darkblue;
-  margin: 0.2em;
+  animation: type_effect 6s steps(60, end);
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
 }
+@keyframes type_effect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100;
+  }
+}
+
+/*steps() is a timing function that allows us to break an animation or transition into segments, rather than one continuous transition from one state to another.
+steps(<number_of_steps>, <direction>)
+*/
+
 .landing_title {
   margin: 0.2em;
+  animation: appear_effect 3s;
+  opacity: 1;
+}
+
+@keyframes appear_effect {
+  0% {
+    opacity: 0.2;
+      transform: scale(1.3);
+
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.5);
+
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .landing_description {
@@ -292,16 +328,16 @@ footer {
   text-align: center;
 }
 
-.why_section_links_box{
-    margin:20px 0px 80px 0px;
+.why_section_links_box {
+  margin: 20px 0px 80px 0px;
 }
 
-.why_link{
-    border: 2px solid gray;
-    border-radius: 30px;
-    padding: 5px;
-    margin:10px;
-    text-decoration: none;
+.why_link {
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
 }
 
 /*Responsive font-size*/
