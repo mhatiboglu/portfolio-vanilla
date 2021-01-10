@@ -59,6 +59,7 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 /* Navbar */
 .nav_ul {
   display: flex;
@@ -348,7 +349,12 @@ steps(<number_of_steps>, <direction>)
   margin: 10px;
   text-decoration: none;
   text-align: center;
+}
 
+.why_link:hover {
+  color: rgb(34, 22, 201);
+  font-weight: 900;
+  transform: scale(1.1);
 }
 
 /*Responsive font-size*/
@@ -493,7 +499,7 @@ svg.dark-theme {
 .selector {
   width: 40px;
   height: 40px;
-  position: absolute;
+  position: fixed;
 }
 
 .right {
@@ -526,4 +532,8 @@ svg.dark-theme {
 
 .top.dark-theme {
   filter: opacity(0.5) drop-shadow(0 0 0 rgb(248, 248, 248));
+}
+
+.footer_social {
+  margin-bottom: 0px;
 }
